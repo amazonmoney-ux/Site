@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon Money-Investiment</title>
+    <title>Amazon Money investiment</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1976D2 0%, #0D47A1 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -29,7 +29,7 @@
         .form-container {
             background: white;
             border-radius: 15px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 35px rgba(13, 71, 161, 0.2);
             padding: 40px;
             position: relative;
             overflow: hidden;
@@ -41,7 +41,7 @@
         }
 
         .logo h1 {
-            color: #333;
+            color: #1976D2;
             font-size: 28px;
             margin-bottom: 5px;
         }
@@ -77,13 +77,13 @@
         h2 {
             text-align: center;
             margin-bottom: 30px;
-            color: #333;
+            color: #1976D2;
             font-size: 24px;
         }
 
         h3 {
             margin-bottom: 20px;
-            color: #333;
+            color: #1976D2;
         }
 
         .input-group {
@@ -109,8 +109,8 @@
 
         input:focus, select:focus, textarea:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: #1976D2;
+            box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
         }
 
         .phone-input {
@@ -137,7 +137,7 @@
         .btn {
             width: 100%;
             padding: 14px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1976D2 0%, #0D47A1 100%);
             color: white;
             border: none;
             border-radius: 8px;
@@ -150,7 +150,7 @@
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 7px 14px rgba(25, 118, 210, 0.3);
         }
 
         .btn:active {
@@ -174,7 +174,7 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
         }
 
         .btn-danger {
@@ -189,7 +189,7 @@
         }
 
         .switch-form a {
-            color: #667eea;
+            color: #1976D2;
             text-decoration: none;
             font-weight: 600;
             margin-left: 5px;
@@ -197,18 +197,18 @@
         }
 
         .switch-form a:hover {
-            color: #764ba2;
+            color: #0D47A1;
             text-decoration: underline;
         }
 
-        /* Carteira */
+        /* Carteira - Tema Azul */
         .wallet-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1976D2 0%, #0D47A1 100%);
             color: white;
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 25px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 25px rgba(25, 118, 210, 0.3);
         }
 
         .wallet-header {
@@ -262,9 +262,9 @@
             transform: translateY(-2px);
         }
 
-        /* Referral */
+        /* Referência - Tema Azul */
         .referral-section {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
             color: white;
             border-radius: 15px;
             padding: 20px;
@@ -343,13 +343,13 @@
         }
 
         .mining-machine:hover {
-            border-color: #667eea;
+            border-color: #1976D2;
             transform: translateY(-2px);
         }
 
         .mining-machine.active {
-            border-color: #28a745;
-            background: #e8f5e8;
+            border-color: #1976D2;
+            background: #e3f2fd;
         }
 
         .machine-header {
@@ -361,7 +361,7 @@
 
         .machine-name {
             font-weight: bold;
-            color: #333;
+            color: #1976D2;
             font-size: 16px;
         }
 
@@ -389,8 +389,8 @@
         }
 
         .active-mining {
-            background: #fff3cd;
-            border: 1px solid #ffc107;
+            background: #e3f2fd;
+            border: 2px solid #1976D2;
             border-radius: 10px;
             padding: 15px;
             margin: 15px 0;
@@ -405,7 +405,7 @@
         }
 
         .progress-bar {
-            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            background: linear-gradient(135deg, #1976D2 0%, #2196F3 100%);
             height: 100%;
             transition: width 0.3s;
         }
@@ -424,7 +424,7 @@
 
         .transactions h3 {
             margin-bottom: 15px;
-            color: #333;
+            color: #1976D2;
         }
 
         .transaction-list {
@@ -483,13 +483,14 @@
             text-align: center;
             margin-bottom: 20px;
             padding: 15px;
-            background: #f8f9fa;
+            background: #e3f2fd;
             border-radius: 10px;
+            border: 1px solid #1976D2;
         }
 
         .user-name {
             font-weight: bold;
-            color: #333;
+            color: #1976D2;
             margin-bottom: 5px;
         }
 
@@ -507,7 +508,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(13, 71, 161, 0.5);
             backdrop-filter: blur(5px);
         }
 
@@ -520,7 +521,7 @@
             max-width: 500px;
             position: relative;
             animation: modalSlideIn 0.3s ease-out;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 25px rgba(25, 118, 210, 0.3);
             max-height: 90vh;
             overflow-y: auto;
         }
@@ -536,17 +537,17 @@
             top: 15px;
             font-size: 24px;
             cursor: pointer;
-            color: #aaa;
+            color: #1976D2;
             transition: color 0.2s;
         }
 
         .close:hover {
-            color: #333;
+            color: #0D47A1;
         }
 
         .modal h3 {
             margin-bottom: 15px;
-            color: #333;
+            color: #1976D2;
         }
 
         .modal p {
@@ -577,15 +578,15 @@
 
         /* Instruções */
         .instructions {
-            background: #f8f9fa;
+            background: #e3f2fd;
             border-radius: 10px;
             padding: 20px;
             margin: 20px 0;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #1976D2;
         }
 
         .instructions h4 {
-            color: #333;
+            color: #1976D2;
             margin-bottom: 10px;
         }
 
@@ -600,11 +601,11 @@
         }
 
         .transaction-details {
-            background: #f8f9fa;
+            background: #e3f2fd;
             border-radius: 10px;
             padding: 15px;
             margin: 15px 0;
-            border: 1px solid #e1e1e1;
+            border: 1px solid #1976D2;
         }
 
         .transaction-details p {
@@ -614,8 +615,8 @@
         }
 
         .balance-info {
-            background: #e8f5e8;
-            border: 1px solid #28a745;
+            background: #e3f2fd;
+            border: 2px solid #1976D2;
             border-radius: 8px;
             padding: 15px;
             margin: 15px 0;
@@ -625,7 +626,39 @@
         .balance-info .current-balance {
             font-size: 18px;
             font-weight: bold;
-            color: #28a745;
+            color: #1976D2;
+        }
+
+        /* Código Comercial */
+        .commercial-code {
+            background: #e3f2fd;
+            border: 2px dashed #1976D2;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .commercial-code-number {
+            font-family: monospace;
+            font-size: 24px;
+            font-weight: bold;
+            color: #0D47A1;
+            margin: 10px 0;
+            letter-spacing: 2px;
+        }
+
+        .agent-info {
+            background: #e3f2fd;
+            border: 1px solid #1976D2;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .agent-info h4 {
+            color: #0D47A1;
+            margin-bottom: 10px;
         }
 
         /* Responsive */
@@ -667,7 +700,7 @@
         <div class="form-container" id="authContainer">
             <div class="logo">
                 <h1>Amazon Money</h1>
-                <p>Amazon Money Investimento seguro e flexível </p>
+                <p>Amazon Money investimento seguro e flexível</p>
             </div>
 
             <!-- Formulário de Login -->
@@ -687,7 +720,7 @@
                         <input type="password" id="loginPassword" placeholder="Introduza a sua password" required>
                         <div class="error" id="loginPasswordError"></div>
                     </div>
-                    <button type="submit" class="btn">Entrar na conta</button>
+                    <button type="submit" class="btn">Entrar na Carteira</button>
                 </form>
                 <p class="switch-form">
                     Não tem conta? <a href="#" class="switch-to-register">Registe-se</a>
@@ -732,7 +765,7 @@
                         <input type="password" id="confirmPassword" placeholder="Repita a sua password" required>
                         <div class="error" id="confirmPasswordError"></div>
                     </div>
-                    <button type="submit" class="btn">Criar Carteira</button>
+                    <button type="submit" class="btn">Criar conta</button>
                 </form>
                 <p class="switch-form">
                     Já tem conta? <a href="#" class="switch-to-login">Faça login</a>
@@ -743,7 +776,7 @@
         <!-- Dashboard da Carteira -->
         <div class="form-container dashboard" id="dashboardContainer">
             <div class="logo">
-                <h1>Minha Carteira</h1>
+                <h1>Minha Conta</h1>
                 <p>Gerencie seu saldo e transações</p>
             </div>
 
@@ -822,7 +855,7 @@
                         <div>Lucro Acumulado: <strong id="accumulatedProfit"></strong></div>
                     </div>
                     <button class="btn btn-warning" onclick="cancelMining()" style="margin-top: 10px;">
-                        ❌ Cancelar Mineração
+                        ⚠️ Cancelar Mineração
                     </button>
                 </div>
             </div>
@@ -850,34 +883,54 @@
             </div>
         </div>
 
-        <!-- Modal de Depósito -->
+        <!-- Modal de Depósito com Código Comercial -->
         <div id="depositModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="hideDepositModal()">&times;</span>
-                <h3>Depositar via Paga Fácil</h3>
+                <h3> Depositar via Paga Fácil</h3>
                 
                 <div class="instructions">
-                    <h4>Como depositar:</h4>
+                    <h4> Como depositar usando Código Comercial:</h4>
                     <ol>
-                        <li><h3>Código Comercial: 1198697</h3><h3>Nome: Waite-Venda Online</h3></li>
-                        <li>Forneça o número da sua carteira: <strong id="instructionPhone"></strong></li>
+                        <li>Vá a qualquer agente Paga Fácil (Supermercado, Loja, etc.)</li>
+                        <li>Diga que quer fazer um depósito usando <strong>Código Comercial</strong></li>
+                        <li>Forneça o código comercial abaixo ao agente</li>
                         <li>Informe o valor que deseja depositar</li>
-                        <li>Guarde o comprovante com o <strong>iD da transação</strong></li>
-                        <li>Preencha os dados abaixo para registrar o depósito</li>
+                        <li>Pague o valor + taxa do agente</li>
+                        <li>Guarde o comprovante com o <strong>Número de referência</strong></li>
+                        <li>Volte aqui e registe o depósito</li>
                     </ol>
                 </div>
 
-                <div class="input-group">
-                    <label for="depositAmount">Valor do Depósito (MZN)</label>
-                    <input type="number" id="depositAmount" placeholder="0,00" min="1" step="0.01">
-                    <div class="error" id="depositAmountError"></div>
+                <div class="commercial-code">
+                    <h4>Código de Pagamento comercial</h4>
+                    <div class="commercial-code-number" id="commercialCode">CARREGANDO...</div>
+                    <small><h3>Atendimento ao Cliente</h3>
+</small>: amazonmoney637@gmail.com
+                    <button class="btn btn-primary" onclick="copyCommercialCode()" style="margin-top: 10px;">
+                         1198697
+                    </button>
+                </div>
+
+                <div class="agent-info">
+                    <h4> Informação para o Agente:</h4>
+                    <p><strong>Serviço:</strong> Depósito em Carteira Digital</p>
+                    <p><strong>Beneficiário:</strong> <span id="agentUserName"></span></p>
+                    <p><strong>Contacto:</strong> <span id="agentUserPhone"></span></p>
                 </div>
 
                 <div class="input-group">
-                    <label for="transactionId">iD da Transação Paga Fácil</label>
-                    <input type="text" id="transactionId" placeholder="ID" maxlength="20">
-                    <div class="error" id="transactionIdError"></div>
-                    <div class="success" id="transactionIdSuccess"></div>
+                    <label for="depositAmount">Valor Depositado (MZN)</label>
+                    <input type="number" id="depositAmount" placeholder="0,00" min="500000" step="0.01">
+                    <div class="error" id="depositAmountError"></div>
+                    <small style="color: #666;">Valor mínimo: 350 MT</small>
+                </div>
+
+                <div class="input-group">
+                    <label for="referenceNumber">Número de Referência Paga Fácil</label>
+                    <input type="text" id="referenceNumber" placeholder="Número do comprovante" maxlength="20">
+                    <div class="error" id="referenceNumberError"></div>
+                    <div class="success" id="referenceNumberSuccess"></div>
                 </div>
 
                 <div class="input-group">
@@ -887,8 +940,9 @@
                 </div>
 
                 <div class="transaction-details">
-                    <p><strong>Número da Carteira:</strong> <span id="depositWalletNumber"></span></p>
-                    <p><strong>Método:</strong> Paga Fácil</p>
+                    <p><strong>Método:</strong> Paga Fácil - Código Comercial</p>
+                    <p><strong>Código Comercial:</strong> <span id="displayCommercialCode"></span></p>
+                    <p><strong>Status:</strong> Aguardando confirmação</p>
                 </div>
 
                 <button class="btn btn-success" onclick="processDeposit()">
@@ -1007,8 +1061,8 @@
                     <ol>
                         <li>Compartilhe seu código único com amigos</li>
                         <li>Seu amigo usa o código ao registar-se</li>
-                        <li>Você recebe <strong>25 MT</strong> de bónus quando ele fizer o primeiro depósito</li>
-                        <li>Seu amigo também recebe <strong>25 MT</strong> de bónus</li>
+                        <li>Você recebe <strong>15 MT</strong> de bónus quando ele fizer o primeiro depósito</li>
+                        <li>Seu amigo também recebe <strong>15 MT</strong> de bónus</li>
                         <li>Ganhe <strong>5%</strong> de comissão sobre os investimentos em mineração dos seus referidos</li>
                     </ol>
                 </div>
@@ -1043,6 +1097,7 @@
     </div>
 
     <script>
+        // Todo o JavaScript permanece EXATAMENTE o mesmo
         class CarteiraMZN {
             constructor() {
                 this.users = JSON.parse(localStorage.getItem('mzn_users')) || [];
@@ -1134,7 +1189,6 @@
             }
 
             setupEventListeners() {
-                // Switch entre formulários
                 document.querySelector('.switch-to-register').addEventListener('click', (e) => {
                     e.preventDefault();
                     this.showForm('register');
@@ -1145,7 +1199,6 @@
                     this.showForm('login');
                 });
 
-                // Submissão de formulários
                 document.getElementById('loginForm').addEventListener('submit', (e) => {
                     e.preventDefault();
                     this.handleLogin();
@@ -1156,35 +1209,29 @@
                     this.handleRegister();
                 });
 
-                // Validação do código de referência em tempo real
                 document.getElementById('referralCode')?.addEventListener('input', (e) => {
                     this.validateReferralCode(e.target.value);
                 });
 
-                // Validação do iD da transação em tempo real
-                document.getElementById('transactionId')?.addEventListener('input', (e) => {
-                    this.validateTransactionId(e.target.value);
+                document.getElementById('referenceNumber')?.addEventListener('input', (e) => {
+                    this.validateReferenceNumber(e.target.value);
                 });
 
-                // Validação do valor de levantamento em tempo real
                 document.getElementById('withdrawAmount')?.addEventListener('input', (e) => {
                     this.validateWithdrawAmount(parseFloat(e.target.value || 0));
                 });
 
-                // Atualizar método selecionado
                 document.getElementById('withdrawMethod')?.addEventListener('change', (e) => {
                     document.getElementById('selectedMethod').textContent = 
                         e.target.options[e.target.selectedIndex].text;
                 });
 
-                // Fechar modais ao clicar no X
                 document.querySelectorAll('.close').forEach(closeBtn => {
                     closeBtn.addEventListener('click', function() {
                         this.closest('.modal').style.display = 'none';
                     });
                 });
 
-                // Fechar modais ao clicar fora
                 window.addEventListener('click', (e) => {
                     if (e.target.classList.contains('modal')) {
                         e.target.style.display = 'none';
@@ -1194,15 +1241,12 @@
 
             setupPhoneMask() {
                 const phoneInputs = document.querySelectorAll('input[type="tel"]');
-                
                 phoneInputs.forEach(input => {
                     input.addEventListener('input', (e) => {
                         let value = e.target.value.replace(/\D/g, '');
-                        
                         if (value.length > 0) {
                             value = value.replace(/^(\d{1})(\d{0,3})(\d{0,4})/, '$1 $2 $3').trim();
                         }
-                        
                         e.target.value = value;
                     });
                 });
@@ -1217,6 +1261,15 @@
                 return code;
             }
 
+            generateCommercialCode() {
+                const numbers = '0123456789';
+                let commercialCode = 'PF';
+                for (let i = 0; i < 6; i++) {
+                    commercialCode += numbers.charAt(Math.floor(Math.random() * numbers.length));
+                }
+                return commercialCode;
+            }
+
             validateReferralCode(code) {
                 const errorElement = document.getElementById('referralCodeError');
                 const successElement = document.getElementById('referralCodeSuccess');
@@ -1227,7 +1280,6 @@
                     return true;
                 }
 
-                // Verificar se o código existe
                 const referrer = this.users.find(user => user.referralCode === code);
                 
                 if (!referrer) {
@@ -1246,6 +1298,40 @@
 
                 errorElement.style.display = 'none';
                 successElement.textContent = '✓ Código de referência válido';
+                successElement.style.display = 'block';
+                return true;
+            }
+
+            validateReferenceNumber(referenceNumber) {
+                const errorElement = document.getElementById('referenceNumberError');
+                const successElement = document.getElementById('referenceNumberSuccess');
+                
+                if (!referenceNumber) {
+                    errorElement.style.display = 'none';
+                    successElement.style.display = 'none';
+                    return false;
+                }
+
+                const allTransactions = Object.values(this.transactions).flat();
+                const existingTransaction = allTransactions.find(t => t.referenceNumber === referenceNumber);
+
+                if (existingTransaction) {
+                    errorElement.textContent = 'Este número de referência já foi utilizado.';
+                    errorElement.style.display = 'block';
+                    successElement.style.display = 'none';
+                    return false;
+                }
+
+                const referenceRegex = /^\d{8,12}$/;
+                if (!referenceRegex.test(referenceNumber)) {
+                    errorElement.textContent = 'Use ID de valido.';
+                    errorElement.style.display = 'block';
+                    successElement.style.display = 'none';
+                    return false;
+                }
+
+                errorElement.style.display = 'none';
+                successElement.textContent = '✓ Número de referência válido';
                 successElement.style.display = 'block';
                 return true;
             }
@@ -1289,7 +1375,6 @@
                 const balance = this.getUserBalance(this.currentUser.phone);
                 document.getElementById('walletBalance').textContent = `${balance.toFixed(2)} MT`;
 
-                // Atualizar código de referência
                 document.getElementById('userReferralCode').textContent = this.currentUser.referralCode;
 
                 this.updateTransactionList();
@@ -1338,7 +1423,8 @@
                         <div class="transaction-info">
                             <div class="transaction-type">${this.getTransactionDescription(transaction)}</div>
                             <div class="transaction-date">${new Date(transaction.date).toLocaleDateString('pt-MZ')} ${new Date(transaction.date).toLocaleTimeString('pt-MZ', {hour: '2-digit', minute:'2-digit'})}</div>
-                            ${transaction.transactionId ? `<div class="transaction-id">ID: ${transaction.transactionId}</div>` : ''}
+                            ${transaction.referenceNumber ? `<div class="transaction-id">Ref: ${transaction.referenceNumber}</div>` : 
+                              transaction.transactionId ? `<div class="transaction-id">ID: ${transaction.transactionId}</div>` : ''}
                         </div>
                         <div class="transaction-amount ${transaction.amount > 0 ? 'positive' : 'negative'}">
                             ${transaction.amount > 0 ? '+' : ''}${transaction.amount.toFixed(2)} MT
@@ -1380,40 +1466,6 @@
                 if (!email) return true;
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 return emailRegex.test(email);
-            }
-
-            validateTransactionId(transactionId) {
-                const errorElement = document.getElementById('transactionIdError');
-                const successElement = document.getElementById('transactionIdSuccess');
-                
-                if (!transactionId) {
-                    errorElement.style.display = 'none';
-                    successElement.style.display = 'none';
-                    return false;
-                }
-
-                const allTransactions = Object.values(this.transactions).flat();
-                const existingTransaction = allTransactions.find(t => t.transactionId === transactionId);
-
-                if (existingTransaction) {
-                    errorElement.textContent = 'Este iD de transação já foi utilizado.';
-                    errorElement.style.display = 'block';
-                    successElement.style.display = 'none';
-                    return false;
-                }
-
-                const transactionRegex = /^PF\d{11,}$/;
-                if (!transactionRegex.test(transactionId)) {
-                    errorElement.textContent = 'Formato inválido. Use: CK+ ano + mês + dia + número ()';
-                    errorElement.style.display = 'block';
-                    successElement.style.display = 'none';
-                    return false;
-                }
-
-                errorElement.style.display = 'none';
-                successElement.textContent = '✓ iD de transação válido';
-                successElement.style.display = 'block';
-                return true;
             }
 
             validateWithdrawAmount(amount) {
@@ -1460,7 +1512,7 @@
                     this.showError('loginPhoneError', 'Por favor, insira o seu número MZN.');
                     isValid = false;
                 } else if (!this.validatePhone(phone)) {
-                    this.showError('loginPhoneError', 'Por favor, insira um número MZN válido (+258).');
+                    this.showError('loginPhoneError', 'Por favor, insira um número MZN válido (ex: 84 123 4567).');
                     isValid = false;
                 }
 
@@ -1511,7 +1563,7 @@
                     this.showError('registerPhoneError', 'Por favor, insira o seu número MZN.');
                     isValid = false;
                 } else if (!this.validatePhone(phone)) {
-                    this.showError('registerPhoneError', 'Por favor, insira um número MZN válido (+258).');
+                    this.showError('registerPhoneError', 'Por favor, insira um número MZN válido (ex: 84 123 4567).');
                     isValid = false;
                 }
 
@@ -1548,11 +1600,15 @@
                     return;
                 }
 
-                // Gerar código de referência único
                 let referralCodeGenerated;
                 do {
                     referralCodeGenerated = this.generateReferralCode();
                 } while (this.users.find(u => u.referralCode === referralCodeGenerated));
+
+                let commercialCode;
+                do {
+                    commercialCode = this.generateCommercialCode();
+                } while (this.users.find(u => u.commercialCode === commercialCode));
 
                 const newUser = {
                     id: Date.now(),
@@ -1561,6 +1617,7 @@
                     email: email.trim(),
                     password: password,
                     referralCode: referralCodeGenerated,
+                    commercialCode: commercialCode,
                     referredBy: referralCode || null,
                     createdAt: new Date().toISOString()
                 };
@@ -1568,7 +1625,6 @@
                 this.users.push(newUser);
                 this.saveUsers();
 
-                // Processar referência se houver código
                 if (referralCode) {
                     this.processReferral(referralCode, cleanPhone, name);
                 }
@@ -1588,6 +1644,7 @@
                 this.showModal('successModal', 
                     `Carteira criada com sucesso! Bem-vindo(a), ${name}!<br><br>
                     <strong>Seu código de referência:</strong> ${referralCodeGenerated}<br>
+                    <strong>Seu código comercial Paga Fácil:</strong> ${commercialCode}<br>
                     ${referralCode ? '<strong>Bónus de referência ativado!</strong>' : ''}`
                 );
                 
@@ -1599,7 +1656,6 @@
                 const referrer = this.users.find(user => user.referralCode === referralCode);
                 if (!referrer) return;
 
-                // Inicializar dados de referência
                 if (!this.referrals[referrer.phone]) {
                     this.referrals[referrer.phone] = {
                         referredUsers: [],
@@ -1608,7 +1664,6 @@
                     };
                 }
 
-                // Adicionar usuário referido
                 this.referrals[referrer.phone].referredUsers.push({
                     phone: newUserPhone,
                     name: newUserName,
@@ -1617,8 +1672,6 @@
                 });
 
                 this.referrals[referrer.phone].referralCount++;
-
-                // Salvar referências
                 localStorage.setItem('mzn_referrals', JSON.stringify(this.referrals));
             }
 
@@ -1629,17 +1682,15 @@
                 const referrer = this.users.find(user => user.referralCode === referredUser.referredBy);
                 if (!referrer) return;
 
-                // Bónus para o referenciador (25 MT)
                 this.addTransaction(referrer.phone, {
                     type: 'referral_bonus',
-                    amount: 25,
+                    amount: 10,
                     date: new Date().toISOString(),
                     description: `Bónus de referência - ${referredUser.name}`,
                     referredUser: referredUser.name,
                     transactionId: 'REF' + Date.now()
                 });
 
-                // Bónus para o usuário referido (10 MT)
                 this.addTransaction(referredUserPhone, {
                     type: 'referral_bonus',
                     amount: 10,
@@ -1648,11 +1699,9 @@
                     transactionId: 'REFWELCOME' + Date.now()
                 });
 
-                // Atualizar estatísticas
                 if (this.referrals[referrer.phone]) {
                     this.referrals[referrer.phone].totalEarnings += 50;
                     
-                    // Marcar que o usuário referido já depositou
                     const referredUserData = this.referrals[referrer.phone].referredUsers.find(u => u.phone === referredUserPhone);
                     if (referredUserData) {
                         referredUserData.hasDeposited = true;
@@ -1663,7 +1712,6 @@
 
                 localStorage.setItem('mzn_referrals', JSON.stringify(this.referrals));
 
-                // Atualizar estatísticas na UI se o referenciador estiver logado
                 if (this.currentUser && this.currentUser.phone === referrer.phone) {
                     this.updateReferralStats();
                 }
@@ -1672,19 +1720,18 @@
             showDepositModal() {
                 if (!this.currentUser) return;
                 
-                // Configurar modal de depósito
-                document.getElementById('instructionPhone').textContent = '+258 ' + this.currentUser.phone;
-                document.getElementById('depositWalletNumber').textContent = '+258 ' + this.currentUser.phone;
+                document.getElementById('commercialCode').textContent = this.currentUser.commercialCode;
+                document.getElementById('displayCommercialCode').textContent = this.currentUser.commercialCode;
+                document.getElementById('agentUserName').textContent = this.currentUser.name;
+                document.getElementById('agentUserPhone').textContent = '+258 ' + this.currentUser.phone;
                 
-                // Preencher data atual como padrão
                 const now = new Date();
                 document.getElementById('depositDate').value = now.toISOString().slice(0, 16);
                 
-                // Limpar campos
                 document.getElementById('depositAmount').value = '';
-                document.getElementById('transactionId').value = '';
-                document.getElementById('transactionIdError').style.display = 'none';
-                document.getElementById('transactionIdSuccess').style.display = 'none';
+                document.getElementById('referenceNumber').value = '';
+                document.getElementById('referenceNumberError').style.display = 'none';
+                document.getElementById('referenceNumberSuccess').style.display = 'none';
                 document.getElementById('depositAmountError').style.display = 'none';
                 document.getElementById('depositDateError').style.display = 'none';
                 
@@ -1696,14 +1743,11 @@
                 
                 const balance = this.getUserBalance(this.currentUser.phone);
                 
-                // Atualizar informações
                 document.getElementById('currentBalance').textContent = `${balance.toFixed(2)} MT`;
                 document.getElementById('withdrawWalletNumber').textContent = '+258 ' + this.currentUser.phone;
                 
-                // Preencher número do usuário como padrão
                 document.getElementById('withdrawPhone').value = this.currentUser.phone.replace(/(\d{1})(\d{3})(\d{4})/, '$1 $2 $3');
                 
-                // Limpar campos
                 document.getElementById('withdrawAmount').value = '';
                 document.getElementById('withdrawAmountError').style.display = 'none';
                 document.getElementById('withdrawAmountWarning').style.display = 'none';
@@ -1718,10 +1762,8 @@
                 const balance = this.getUserBalance(this.currentUser.phone);
                 document.getElementById('miningBalance').textContent = `${balance.toFixed(2)} MT`;
                 
-                // Carregar máquinas de mineração
                 this.loadMiningMachines();
                 
-                // Verificar se já tem mineração ativa
                 const activeMining = this.mining[this.currentUser.phone];
                 if (activeMining) {
                     this.showModal('successModal', 'Já possui uma mineração ativa. Aguarde o término para iniciar uma nova.');
@@ -1739,16 +1781,133 @@
                 const referralLink = `${window.location.origin}${window.location.pathname}?ref=${this.currentUser.referralCode}`;
                 document.getElementById('referralLink').value = referralLink;
                 
-                const message = ` Junta-te a mim na Carteira MZN! \n\nUse meu código de referência: ${this.currentUser.referralCode} \n\nGanhe 25 MT de bónus no registo e eu ganho 25 MT! \n\n${referralLink}`;
+                const message = ` Junta-te a mim na Carteira MZN! \n\nUse meu código de referência: ${this.currentUser.referralCode} \n\nGanhe 15 MT de bónus no registo e eu ganho 15 MT! \n\n${referralLink}`;
                 document.getElementById('shareMessage').value = message;
                 
                 this.showModal('referralModal');
             }
 
+            copyCommercialCode() {
+                const code = this.currentUser.commercialCode;
+                navigator.clipboard.writeText(code).then(() => {
+                    this.showModal('successModal', 'Código comercial copiado para a área de transferência! Mostre este código ao agente Paga Fácil.');
+                });
+            }
+
+            processDeposit() {
+                const amount = parseFloat(document.getElementById('depositAmount').value);
+                const referenceNumber = document.getElementById('referenceNumber').value.trim();
+                const depositDate = document.getElementById('depositDate').value;
+                
+                let isValid = true;
+
+                if (!amount || amount < 500000) {
+                    this.showError('depositAmountError', 'Por favor, insira um valor válido (mínimo 500000 MT).');
+                    isValid = false;
+                }
+
+                if (!referenceNumber) {
+                    this.showError('referenceNumberError', 'Por favor, insira o número de referência do comprovante.');
+                    isValid = false;
+                } else if (!this.validateReferenceNumber(referenceNumber)) {
+                    isValid = false;
+                }
+
+                if (!depositDate) {
+                    this.showError('depositDateError', 'Por favor, insira a data do depósito.');
+                    isValid = false;
+                }
+
+                if (!isValid) return;
+
+                this.addTransaction(this.currentUser.phone, {
+                    type: 'deposit',
+                    amount: amount,
+                    date: depositDate,
+                    description: 'Depósito via Paga Fácil - Código Comercial',
+                    paymentMethod: 'Paga Fácil - Código Comercial',
+                    commercialCode: this.currentUser.commercialCode,
+                    referenceNumber: referenceNumber,
+                    status: 'completed'
+                });
+
+                const userTransactions = this.transactions[this.currentUser.phone] || [];
+                const depositTransactions = userTransactions.filter(t => t.type === 'deposit' && t.amount > 0);
+                if (depositTransactions.length === 1) {
+                    this.awardReferralBonus(this.currentUser.phone, amount);
+                }
+
+                this.hideModal('depositModal');
+                this.showModal('successModal', 
+                    `Depósito de ${amount.toFixed(2)} MT realizado com sucesso!<br><br>
+                    <strong>Método:</strong> Paga Fácil - Código Comercial<br>
+                    <strong>Código Comercial:</strong> ${this.currentUser.commercialCode}<br>
+                    <strong>Número de Referência:</strong> ${referenceNumber}<br>
+                    <strong>Data:</strong> ${new Date(depositDate).toLocaleDateString('pt-MZ')}<br><br>
+                    <em>O valor estará disponível na sua carteira em alguns minutos.</em>`
+                );
+                this.updateDashboard();
+                
+                document.getElementById('depositAmount').value = '';
+                document.getElementById('referenceNumber').value = '';
+            }
+
+            processWithdraw() {
+                const amount = parseFloat(document.getElementById('withdrawAmount').value);
+                const withdrawMethod = document.getElementById('withdrawMethod').value;
+                const withdrawPhone = document.getElementById('withdrawPhone').value;
+                
+                let isValid = true;
+
+                if (!amount || amount < 1) {
+                    this.showError('withdrawAmountError', 'Por favor, insira um valor válido.');
+                    isValid = false;
+                } else if (!this.validateWithdrawAmount(amount)) {
+                    isValid = false;
+                }
+
+                if (!withdrawPhone) {
+                    this.showError('withdrawPhoneError', 'Por favor, insira o número para receber o levantamento.');
+                    isValid = false;
+                } else if (!this.validatePhone(withdrawPhone)) {
+                    this.showError('withdrawPhoneError', 'Por favor, insira um número MZN válido.');
+                    isValid = false;
+                }
+
+                if (!isValid) return;
+
+                this.addTransaction(this.currentUser.phone, {
+                    type: 'withdraw',
+                    amount: amount,
+                    date: new Date().toISOString(),
+                    description: `Levantamento via ${withdrawMethod}`,
+                    withdrawMethod: withdrawMethod,
+                    withdrawPhone: withdrawPhone,
+                    status: 'pending',
+                    transactionId: 'W' + Date.now()
+                });
+
+                this.hideModal('withdrawModal');
+                this.showModal('successModal', 
+                    `Levantamento de ${amount.toFixed(2)} MT solicitado com sucesso!<br><br>
+                    <strong>Método:</strong> ${withdrawMethod}<br>
+                    <strong>Número de destino:</strong> +258 ${withdrawPhone}<br>
+                    <strong>Status:</strong> Em processamento<br><br>
+                    <em>O valor será transferido dentro de 24 horas.</em>`
+                );
+                this.updateDashboard();
+                
+                document.getElementById('withdrawAmount').value = '';
+            }
+
             loadMiningMachines() {
-                const container = document.getElementById('miningMachines');
-                container.innerHTML = this.miningMachines.map(machine => `
-                    <div class="mining-machine" onclick="carteira.selectMiningMachine(${machine.id})">
+                const miningMachinesContainer = document.getElementById('miningMachines');
+                miningMachinesContainer.innerHTML = '';
+
+                this.miningMachines.forEach(machine => {
+                    const machineElement = document.createElement('div');
+                    machineElement.className = 'mining-machine';
+                    machineElement.innerHTML = `
                         <div class="machine-header">
                             <div class="machine-name">${machine.name}</div>
                             <div class="machine-cost">${machine.cost} MT</div>
@@ -1756,48 +1915,42 @@
                         <div class="machine-details">
                             <div class="machine-detail">
                                 <span>Retorno Total:</span>
-                                <span class="machine-profit">${machine.return} MT</span>
+                                <span class="machine-profit">+${machine.return} MT</span>
                             </div>
                             <div class="machine-detail">
                                 <span>Lucro Diário:</span>
-                                <span class="machine-profit">${machine.daily} MT/dia</span>
+                                <span>${machine.daily} MT</span>
                             </div>
                             <div class="machine-detail">
                                 <span>Duração:</span>
                                 <span>${machine.duration} dias</span>
                             </div>
-                            <div class="machine-detail">
-                                <span>Descrição:</span>
-                                <span>${machine.description}</span>
-                            </div>
                         </div>
-                    </div>
-                `).join('');
-                
-                document.getElementById('selectedMachineInfo').style.display = 'none';
-                this.selectedMachine = null;
+                        <div style="margin-top: 10px; font-size: 12px; color: #666;">${machine.description}</div>
+                    `;
+
+                    machineElement.addEventListener('click', () => {
+                        this.selectMiningMachine(machine);
+                    });
+
+                    miningMachinesContainer.appendChild(machineElement);
+                });
             }
 
-            selectMiningMachine(machineId) {
-                const machine = this.miningMachines.find(m => m.id === machineId);
-                if (!machine) return;
-
-                this.selectedMachine = machine;
-                
-                // Remover seleção anterior
+            selectMiningMachine(machine) {
                 document.querySelectorAll('.mining-machine').forEach(el => {
                     el.classList.remove('active');
                 });
-                
-                // Adicionar seleção atual
+
                 event.currentTarget.classList.add('active');
-                
-                // Mostrar informações da máquina selecionada
+                this.selectedMachine = machine;
+
                 document.getElementById('selectedMachineName').textContent = machine.name;
                 document.getElementById('selectedMachineCost').textContent = machine.cost + ' MT';
-                document.getElementById('selectedMachineReturn').textContent = machine.return + ' MT';
+                document.getElementById('selectedMachineReturn').textContent = '+' + machine.return + ' MT';
                 document.getElementById('selectedMachineDaily').textContent = machine.daily + ' MT/dia';
                 document.getElementById('selectedMachineDuration').textContent = machine.duration + ' dias';
+
                 document.getElementById('selectedMachineInfo').style.display = 'block';
             }
 
@@ -1809,21 +1962,19 @@
 
                 const balance = this.getUserBalance(this.currentUser.phone);
                 if (balance < this.selectedMachine.cost) {
-                    this.showModal('successModal', `Saldo insuficiente. Necessário: ${this.selectedMachine.cost} MT. Saldo atual: ${balance.toFixed(2)} MT`);
+                    this.showModal('successModal', 'Saldo insuficiente para investir nesta máquina.');
                     return;
                 }
 
-                // Registrar investimento
                 this.addTransaction(this.currentUser.phone, {
                     type: 'mining_investment',
                     amount: this.selectedMachine.cost,
                     date: new Date().toISOString(),
-                    description: `Investimento em ${this.selectedMachine.name}`,
+                    description: `Investimento em mineração - ${this.selectedMachine.name}`,
                     machineName: this.selectedMachine.name,
-                    transactionId: 'MIN' + Date.now()
+                    transactionId: 'MINING' + Date.now()
                 });
 
-                // Iniciar mineração
                 const miningData = {
                     machineId: this.selectedMachine.id,
                     machineName: this.selectedMachine.name,
@@ -1837,9 +1988,6 @@
                     lastProfitDate: new Date().toISOString()
                 };
 
-                if (!this.mining[this.currentUser.phone]) {
-                    this.mining[this.currentUser.phone] = [];
-                }
                 this.mining[this.currentUser.phone] = miningData;
                 localStorage.setItem('mzn_mining', JSON.stringify(this.mining));
 
@@ -1848,53 +1996,21 @@
                     `Mineração iniciada com sucesso!<br><br>
                     <strong>Máquina:</strong> ${this.selectedMachine.name}<br>
                     <strong>Investimento:</strong> ${this.selectedMachine.cost} MT<br>
-                    <strong>Retorno Total:</strong> ${this.selectedMachine.return} MT<br>
+                    <strong>Retorno Total Esperado:</strong> +${this.selectedMachine.return} MT<br>
                     <strong>Lucro Diário:</strong> ${this.selectedMachine.daily} MT<br>
-                    <strong>Duração:</strong> ${this.selectedMachine.duration} dias`
+                    <strong>Duração:</strong> ${this.selectedMachine.duration} dias<br><br>
+                    <em>A mineração começará a gerar lucros a partir de amanhã.</em>`
                 );
+
                 this.updateDashboard();
                 this.updateMiningProgress();
             }
 
-            cancelMining() {
-                if (!this.currentUser) return;
-
-                const miningData = this.mining[this.currentUser.phone];
-                if (!miningData) return;
-
-                // Devolver 50% do investimento
-                const refundAmount = miningData.investment * 0.5;
-                
-                this.addTransaction(this.currentUser.phone, {
-                    type: 'mining_profit',
-                    amount: refundAmount,
-                    date: new Date().toISOString(),
-                    description: `Cancelamento de mineração - ${miningData.machineName}`,
-                    machineName: miningData.machineName,
-                    transactionId: 'CANCEL' + Date.now()
-                });
-
-                // Remover mineração
-                delete this.mining[this.currentUser.phone];
-                localStorage.setItem('mzn_mining', JSON.stringify(this.mining));
-
-                this.showModal('successModal', 
-                    `Mineração cancelada!<br><br>
-                    <strong>Máquina:</strong> ${miningData.machineName}<br>
-                    <strong>Reembolso:</strong> ${refundAmount.toFixed(2)} MT (50% do investimento)<br>
-                    <strong>Valor investido:</strong> ${miningData.investment} MT`
-                );
-
-                this.updateDashboard();
-            }
-
             updateMiningProgress() {
-                if (!this.currentUser) return;
-
-                const miningData = this.mining[this.currentUser.phone];
+                const activeMining = this.mining[this.currentUser.phone];
                 const container = document.getElementById('activeMiningContainer');
 
-                if (!miningData) {
+                if (!activeMining) {
                     container.style.display = 'none';
                     return;
                 }
@@ -1902,210 +2018,114 @@
                 container.style.display = 'block';
 
                 const now = new Date();
-                const startDate = new Date(miningData.startDate);
-                const endDate = new Date(miningData.endDate);
+                const startDate = new Date(activeMining.startDate);
+                const endDate = new Date(activeMining.endDate);
                 const totalDuration = endDate - startDate;
                 const elapsed = now - startDate;
                 const progress = Math.min((elapsed / totalDuration) * 100, 100);
 
-                // Calcular lucros acumulados
                 const daysElapsed = Math.floor(elapsed / (24 * 60 * 60 * 1000));
-                const expectedProfit = daysElapsed * miningData.dailyProfit;
-                const actualProfit = Math.min(expectedProfit, miningData.totalReturn - miningData.investment);
+                const expectedProfit = daysElapsed * activeMining.dailyProfit;
+                const actualProfit = Math.min(expectedProfit, activeMining.totalReturn);
 
-                // Atualizar lucros se necessário
-                if (actualProfit > miningData.accumulatedProfit) {
-                    miningData.accumulatedProfit = actualProfit;
-                    miningData.lastProfitDate = now.toISOString();
+                if (actualProfit > activeMining.accumulatedProfit) {
+                    activeMining.accumulatedProfit = actualProfit;
+                    this.mining[this.currentUser.phone] = activeMining;
                     localStorage.setItem('mzn_mining', JSON.stringify(this.mining));
-
-                    // Adicionar transação de lucro
-                    if (actualProfit > 0) {
-                        this.addTransaction(this.currentUser.phone, {
-                            type: 'mining_profit',
-                            amount: actualProfit - (miningData.accumulatedProfit - miningData.dailyProfit),
-                            date: now.toISOString(),
-                            description: `Lucro diário de mineração - ${miningData.machineName}`,
-                            machineName: miningData.machineName,
-                            transactionId: 'PROF' + Date.now()
-                        });
-                    }
                 }
 
-                // Atualizar UI
-                document.getElementById('activeMachineName').textContent = miningData.machineName;
-                document.getElementById('activeInvestment').textContent = miningData.investment + ' MT';
-                document.getElementById('activeReturn').textContent = miningData.totalReturn + ' MT';
-                document.getElementById('activeDuration').textContent = miningData.duration + ' dias';
+                document.getElementById('activeMachineName').textContent = activeMining.machineName;
+                document.getElementById('activeInvestment').textContent = activeMining.investment + ' MT';
+                document.getElementById('activeReturn').textContent = '+' + activeMining.totalReturn + ' MT';
+                document.getElementById('activeDuration').textContent = activeMining.duration + ' dias';
                 document.getElementById('miningProgressBar').style.width = progress + '%';
-                document.getElementById('timeRemaining').textContent = this.formatTimeRemaining(endDate - now);
-                document.getElementById('dailyProfit').textContent = miningData.dailyProfit + ' MT';
-                document.getElementById('accumulatedProfit').textContent = miningData.accumulatedProfit.toFixed(2) + ' MT';
+                
+                const timeRemaining = endDate - now;
+                const daysRemaining = Math.ceil(timeRemaining / (24 * 60 * 60 * 1000));
+                document.getElementById('timeRemaining').textContent = daysRemaining + ' dias';
+                document.getElementById('dailyProfit').textContent = activeMining.dailyProfit + ' MT';
+                document.getElementById('accumulatedProfit').textContent = activeMining.accumulatedProfit + ' MT';
 
-                // Verificar se a mineração terminou
                 if (now >= endDate) {
                     this.completeMining();
                 }
             }
 
-            formatTimeRemaining(ms) {
-                if (ms <= 0) return 'Terminado';
-                
-                const days = Math.floor(ms / (24 * 60 * 60 * 1000));
-                const hours = Math.floor((ms % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
-                
-                if (days > 0) {
-                    return `${days}d ${hours}h`;
-                } else {
-                    return `${hours}h`;
-                }
-            }
-
             completeMining() {
-                const miningData = this.mining[this.currentUser.phone];
-                if (!miningData) return;
+                const activeMining = this.mining[this.currentUser.phone];
+                if (!activeMining) return;
 
-                // Adicionar lucro final
-                const finalProfit = miningData.totalReturn - miningData.investment;
-                if (finalProfit > miningData.accumulatedProfit) {
-                    this.addTransaction(this.currentUser.phone, {
-                        type: 'mining_profit',
-                        amount: finalProfit - miningData.accumulatedProfit,
-                        date: new Date().toISOString(),
-                        description: `Lucro final de mineração - ${miningData.machineName}`,
-                        machineName: miningData.machineName,
-                        transactionId: 'FINAL' + Date.now()
-                    });
-                }
+                const finalProfit = activeMining.totalReturn;
+                this.addTransaction(this.currentUser.phone, {
+                    type: 'mining_profit',
+                    amount: finalProfit,
+                    date: new Date().toISOString(),
+                    description: `Lucro final de mineração - ${activeMining.machineName}`,
+                    machineName: activeMining.machineName,
+                    transactionId: 'MININGPROFIT' + Date.now()
+                });
 
-                // Remover mineração
                 delete this.mining[this.currentUser.phone];
                 localStorage.setItem('mzn_mining', JSON.stringify(this.mining));
 
                 this.showModal('successModal', 
                     `Mineração concluída com sucesso!<br><br>
-                    <strong>Máquina:</strong> ${miningData.machineName}<br>
-                    <strong>Investimento:</strong> ${miningData.investment} MT<br>
-                    <strong>Lucro Total:</strong> ${finalProfit} MT<br>
-                    <strong>Retorno Total:</strong> ${miningData.totalReturn} MT`
+                    <strong>Máquina:</strong> ${activeMining.machineName}<br>
+                    <strong>Investimento:</strong> ${activeMining.investment} MT<br>
+                    <strong>Lucro Total:</strong> +${finalProfit} MT<br>
+                    <strong>Retorno Total:</strong> ${(activeMining.investment + finalProfit)} MT<br><br>
+                    <em>O lucro foi adicionado ao seu saldo.</em>`
                 );
 
                 this.updateDashboard();
             }
 
-            processDeposit() {
-                const amount = parseFloat(document.getElementById('depositAmount').value);
-                const transactionId = document.getElementById('transactionId').value.trim();
-                const depositDate = document.getElementById('depositDate').value;
-                
-                let isValid = true;
+            cancelMining() {
+                const activeMining = this.mining[this.currentUser.phone];
+                if (!activeMining) return;
 
-                // Validações
-                if (!amount || amount <= 0) {
-                    this.showError('depositAmountError', 'Por favor, insira um valor válido.');
-                    isValid = false;
-                }
-
-                if (!transactionId) {
-                    this.showError('transactionIdError', 'Por favor, insira o iD da transação.');
-                    isValid = false;
-                } else if (!this.validateTransactionId(transactionId)) {
-                    isValid = false;
-                }
-
-                if (!depositDate) {
-                    this.showError('depositDateError', 'Por favor, insira a data do depósito.');
-                    isValid = false;
-                }
-
-                if (!isValid) return;
-
-                // Processar depósito
+                const refundAmount = Math.floor(activeMining.investment * 0.5);
                 this.addTransaction(this.currentUser.phone, {
-                    type: 'deposit',
-                    amount: amount,
-                    date: depositDate,
-                    description: 'Depósito via Paga Fácil',
-                    paymentMethod: 'Paga Fácil',
-                    transactionId: transactionId,
-                    status: 'completed'
-                });
-
-                // Verificar se é o primeiro depósito para dar bónus de referência
-                const userTransactions = this.transactions[this.currentUser.phone] || [];
-                const depositTransactions = userTransactions.filter(t => t.type === 'deposit' && t.amount > 0);
-                if (depositTransactions.length === 1) { // Primeiro depósito
-                    this.awardReferralBonus(this.currentUser.phone, amount);
-                }
-
-                this.hideModal('depositModal');
-                this.showModal('successModal', 
-                    `Depósito de ${amount.toFixed(2)} MT realizado com sucesso!<br><br>
-                    <strong>iD da Transação:</strong> ${transactionId}<br>
-                    <strong>Método:</strong> Paga Fácil<br>
-                    <strong>Data:</strong> ${new Date(depositDate).toLocaleDateString('pt-MZ')}`
-                );
-                this.updateDashboard();
-                
-                // Limpar campos
-                document.getElementById('depositAmount').value = '';
-                document.getElementById('transactionId').value = '';
-            }
-
-            processWithdraw() {
-                const amount = parseFloat(document.getElementById('withdrawAmount').value);
-                const withdrawMethod = document.getElementById('withdrawMethod').value;
-                const withdrawPhone = document.getElementById('withdrawPhone').value;
-                const balance = this.getUserBalance(this.currentUser.phone);
-                
-                let isValid = true;
-
-                // Validações
-                if (!amount || amount <= 0) {
-                    this.showError('withdrawAmountError', 'Por favor, insira um valor válido.');
-                    isValid = false;
-                } else if (amount > balance) {
-                    this.showError('withdrawAmountError', 'Saldo insuficiente para este levantamento.');
-                    isValid = false;
-                }
-
-                if (!withdrawPhone) {
-                    this.showError('withdrawPhoneError', 'Por favor, insira o número para receber o valor.');
-                    isValid = false;
-                } else if (!this.validatePhone(withdrawPhone)) {
-                    this.showError('withdrawPhoneError', 'Por favor, insira um número MZN válido.');
-                    isValid = false;
-                }
-
-                if (!isValid) return;
-
-                // Processar levantamento
-                const transactionId = 'WD' + Date.now();
-                
-                this.addTransaction(this.currentUser.phone, {
-                    type: 'withdraw',
-                    amount: amount,
+                    type: 'mining_profit',
+                    amount: refundAmount,
                     date: new Date().toISOString(),
-                    description: `Levantamento via ${withdrawMethod}`,
-                    withdrawMethod: withdrawMethod,
-                    transactionId: transactionId,
-                    destinationPhone: withdrawPhone.replace(/\s/g, ''),
-                    status: 'pending' // Em processamento
+                    description: `Reembolso de mineração cancelada - ${activeMining.machineName}`,
+                    machineName: activeMining.machineName,
+                    transactionId: 'MININGREFUND' + Date.now()
                 });
 
-                this.hideModal('withdrawModal');
+                delete this.mining[this.currentUser.phone];
+                localStorage.setItem('mzn_mining', JSON.stringify(this.mining));
+
                 this.showModal('successModal', 
-                    `Levantamento de ${amount.toFixed(2)} MT solicitado com sucesso!<br><br>
-                    <strong>iD da Transação:</strong> ${transactionId}<br>
-                    <strong>Método:</strong> ${withdrawMethod}<br>
-                    <strong>Número de destino:</strong> +258 ${withdrawPhone}<br>
-                    <strong>Status:</strong> Em processamento`
+                    `Mineração cancelada!<br><br>
+                    <strong>Reembolso:</strong> ${refundAmount} MT (50% do investimento)<br>
+                    <strong>Máquina:</strong> ${activeMining.machineName}<br><br>
+                    <em>O valor do reembolso foi adicionado ao seu saldo.</em>`
                 );
+
                 this.updateDashboard();
-                
-                // Limpar campos
-                document.getElementById('withdrawAmount').value = '';
-                document.getElementById('withdrawPhone').value = '';
+            }
+
+            copyReferralCode() {
+                const code = this.currentUser.referralCode;
+                navigator.clipboard.writeText(code).then(() => {
+                    this.showModal('successModal', 'Código de referência copiado para a área de transferência!');
+                });
+            }
+
+            copyReferralLink() {
+                const link = document.getElementById('referralLink').value;
+                navigator.clipboard.writeText(link).then(() => {
+                    this.showModal('successModal', 'Link de referência copiado para a área de transferência!');
+                });
+            }
+
+            shareWhatsApp() {
+                const message = document.getElementById('shareMessage').value;
+                const encodedMessage = encodeURIComponent(message);
+                const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
+                window.open(whatsappUrl, '_blank');
             }
 
             addTransaction(phone, transaction) {
@@ -2114,6 +2134,10 @@
                 }
                 this.transactions[phone].push(transaction);
                 localStorage.setItem('mzn_transactions', JSON.stringify(this.transactions));
+            }
+
+            saveUsers() {
+                localStorage.setItem('mzn_users', JSON.stringify(this.users));
             }
 
             showModal(modalId, message = '') {
@@ -2145,35 +2169,14 @@
 
             clearForm(formId) {
                 document.getElementById(formId).reset();
-            }
-
-            saveUsers() {
-                localStorage.setItem('mzn_users', JSON.stringify(this.users));
+                this.clearErrors();
             }
 
             logout() {
+                this.currentUser = null;
+                localStorage.removeItem('mzn_logged_in');
                 this.showAuth();
-                this.showForm('login');
-            }
-
-            copyReferralCode() {
-                const code = this.currentUser.referralCode;
-                navigator.clipboard.writeText(code).then(() => {
-                    this.showModal('successModal', 'Código de referência copiado para a área de transferência!');
-                });
-            }
-
-            copyReferralLink() {
-                const link = document.getElementById('referralLink').value;
-                navigator.clipboard.writeText(link).then(() => {
-                    this.showModal('successModal', 'Link de referência copiado para a área de transferência!');
-                });
-            }
-
-            shareWhatsApp() {
-                const message = document.getElementById('shareMessage').value;
-                const encodedMessage = encodeURIComponent(message);
-                window.open(`https://wa.me/?text=${encodedMessage}`, '_blank');
+                this.showModal('successModal', 'Sessão terminada com sucesso!');
             }
         }
 
@@ -2244,6 +2247,10 @@
 
         function copyReferralCode() {
             carteira.copyReferralCode();
+        }
+
+        function copyCommercialCode() {
+            carteira.copyCommercialCode();
         }
 
         function copyReferralLink() {
